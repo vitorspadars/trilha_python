@@ -49,9 +49,10 @@ res_pot = float(base_1 ** potencia_1)
 print(f'O resultado da potência é: {res_pot}')
 
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-celsius = int(input('Digite a temperatura em Celsius: '))
-conversor = float((celsius * 9/5) + 32)
-print(f'A temperatura em Fahrenheit é: {conversor}')
+celsius = float(input('Digite a temperatura em Celsius: '))
+conversor = (celsius * 9/5) + 32
+print(f'A conversão de {celsius}C em Fahrenheit é: {conversor}F')
+
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 import math
@@ -79,6 +80,12 @@ print(f'A área do circulo é: {area_circulo}')
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+try:
+    celsius = float(input('Digite a temperatura em Celsius: '))
+    conversor = (celsius * 9/5) + 32
+    print(f'A conversão de {celsius}C em Fahrenheit é: {conversor}F')
+except ValueError:
+    print('Digite um número valido para a conversão')
 # 22: Verificador de Palíndromo
 # 23: Calculadora Simples
 # 24: Classificador de Números
