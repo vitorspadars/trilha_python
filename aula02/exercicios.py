@@ -10,13 +10,21 @@ divisao = int(input("Digite um número: "))
 print(divisao % 5)
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
-
+print('Vamos multiplicar dois números!')
+mult1 = int(input('Digite o primeiro número: '))
+mult2 = int(input('Digite o segundo número: '))
+mult_res = mult1 * mult2
+print(f'O resultado da multiplicação é: {mult_res}')
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-
+div_1 = int(input("Digite o primeiro número: "))
+div_2 = int(input("Digite o segundo número: "))
+div_res = div_1 / div_2
+print(f'O resultado foi: {div_res}')
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
-
+quad = int(input('Digite um número para calcular o quadrado: '))
+print(f'O quadrado de {quad} é: {quad ** 2}')
 
 # #### Números de Ponto Flutuante (`float`)
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
