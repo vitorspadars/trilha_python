@@ -17,10 +17,13 @@ mult_res = mult1 * mult2
 print(f'O resultado da multiplicação é: {mult_res}')
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-div_1 = int(input("Digite o primeiro número: "))
-div_2 = int(input("Digite o segundo número: "))
-div_res = div_1 / div_2
-print(f'O resultado foi: {div_res}')
+try:
+    div_1 = int(input("Digite o primeiro número: "))
+    div_2 = int(input("Digite o segundo número: "))
+    div_res = div_1 / div_2
+    print(f'O resultado foi: {div_res}')
+except:
+    print('Parece que ocorreu um erro')
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 quad = int(input('Digite um número para calcular o quadrado: '))
